@@ -33,7 +33,8 @@ const ListMovies = () => {
 
     // memanggil (invoke) function fecth data supaya dapat menjalankan useEf
     fetchDataMovies();
-  });
+    // membuat [] bertujuan agar merender 1 kali
+  }, []);
 
   return (
     <Box className="boxy">
